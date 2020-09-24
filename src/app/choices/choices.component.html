@@ -1,1 +1,6 @@
-<p>choices works!</p>
+<div class="btn-group m-3" *ngFor="let choice of currentDialog.choices">
+  <button class="btn btn-outline-primary">
+    {{ choice.text }}
+  </button>
+</div>
+<!-- (click)="addStudent(addUser)" -->
