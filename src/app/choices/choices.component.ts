@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Choice } from 'src/Choice';
 import { Dialog } from 'src/Dialog';
 import { DialogService } from '../dialog.service';
 
@@ -14,5 +15,9 @@ export class ChoicesComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentDialog = this.dialogService.currentDialog;
+  }
+
+  choiceClicked(choice: Choice): void {
+    this.currentDialog = this.dialogService.selectChoice(choice);
   }
 }

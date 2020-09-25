@@ -15,5 +15,7 @@ export class DialogComponent implements OnInit {
   ngOnInit(): void {
     this.currentDialog = this.dialogService.currentDialog;
     console.log(this.currentDialog);
+
+    this.dialogService.DialogChanged.subscribe((dialog) => this.currentDialog = dialog);
   }
 }

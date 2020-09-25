@@ -1,7 +1,8 @@
+import { CharacterMood } from './app/CharacterMood';
 import { Choice } from './Choice';
 
 export class Dialog {
-  title: string;
+  mood: CharacterMood = CharacterMood.Idle;
   message: string;
 
   choices: Choice[];
