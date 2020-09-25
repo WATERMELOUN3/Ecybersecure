@@ -1,5 +1,5 @@
 <div class="fixed-bottom btn-zone">
-  <div class="btn-group m-3 full-width" *ngFor="let choice of currentDialog.choices">
+  <div class="btn-group m-2 full-width" *ngFor="let choice of currentDialog.choices">
     <button class="btn btn-outline-primary btn-block" (click)=choiceClicked(choice)>
       {{ choice.text }}
     </button>
